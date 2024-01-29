@@ -1,0 +1,113 @@
+.calculator {
+     background-color: black;
+     color: White;
+     font-size: 30px;
+     display: flex;
+     width: 100%;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-direction: column;
+}
+.calc_input{
+    object-fit: contain;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;    
+    justify-content: space-evenly;
+}
+.calc_input > input{
+    display: flex;
+    margin: 0px 30px;
+    font-size: 30px;
+    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.calc_input > input::-webkit-outer-spin-button,
+.calc_input > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calc_input > input:focus {
+    outline: none;
+    
+}
+.calc_input > h1{
+    color: white;
+    font-size: 30px;
+    object-fit: contain;
+    text-align: center;
+}
+.calculator_buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.result_field {
+    text-align: center;
+}
+
+.calculator_buttons > button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    font-size: 20px;
+    width: 100px;
+    margin: 19px 0px
+}
+
+.calculator_buttons > button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    
+        .calc_input{
+            object-fit: contain;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;    
+            justify-content: space-evenly;
+        }
+        .calc_input > input{
+            display: flex;
+            margin: 0px 30px;
+            font-size: 20px;
+            padding: 10px;
+            width: 57%;
+            overflow: hidden;
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            text-align: center;
+        }
+        .calculator > p {
+            font-size: 15px;
+            font-weight: 600;
+        }
+        .calculator_buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .calculator_buttons > button {
+            color: white;
+            background-color: black;
+            border: 1px solid white;
+            font-size: 20px;
+            width: 100%;
+        }
+        
+        
+  }

@@ -1,0 +1,34 @@
+.calc_buttons {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+    justify-content: space-between;
+    padding: 20px;
+}
+.calc_buttons > button {
+    padding: 0px 50px;
+    justify-content: space-evenly;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.calc_buttons > button:hover{
+    color: white;
+    background-color: black;
+}
+
+@media only screen and (max-width: 700px) {
+    .calc_buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 10px;
+        padding: 20px;
+    }
+    .calc_buttons > button {
+        padding: 0px 50px;
+        justify-content: space-evenly;
+        cursor: pointer;
+        font-size: 20px;
+        margin-bottom: -50px;
+    }
+}
